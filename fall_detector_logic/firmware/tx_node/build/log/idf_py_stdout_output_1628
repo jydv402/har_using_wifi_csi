@@ -1,0 +1,113 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Projects\major\project_v3\firmware\tx_node\build\tx_node.elf D:\Projects\major\project_v3\firmware\tx_node\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py' '-p' 'COM3'
+0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 21 2026 20:03:29[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 0000b000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=17de0h ( 97760) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=00037e08 vaddr=3ffb0000 size=04338h ( 17208) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0003c148 vaddr=40080000 size=03ed0h ( 16080) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7ea00h (518656) map[0m
+[0;32mI (310) esp_image: segment 4: paddr=000bea28 vaddr=40083ed0 size=140c0h ( 82112) load[0m
+[0;32mI (342) esp_image: segment 5: paddr=000d2af0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (365) cpu_start: Multicore app[0m
+[0;32mI (373) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (373) cpu_start: Pro cpu start user code[0m
+[0;32mI (374) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (375) app_init: Application information:[0m
+[0;32mI (379) app_init: Project name:     tx_node[0m
+[0;32mI (383) app_init: App version:      4ba8e70e-dirty[0m
+[0;32mI (388) app_init: Compile time:     Mar 22 2026 22:34:27[0m
+[0;32mI (393) app_init: ELF file SHA256:  59479152a...[0m
+[0;32mI (397) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (401) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (405) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (409) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (413) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (419) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (424) heap_init: At 3FFB8670 len 00027990 (158 KiB): DRAM[0m
+[0;32mI (429) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (434) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (440) heap_init: At 40097F90 len 00008070 (32 KiB): IRAM[0m
+[0;33mW (447) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (462) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (478) main_task: Started on CPU0[0m
+[0;32mI (481) main_task: Calling app_main()[0m
+[0;32mI (498) wifi:wifi driver task: 3ffc00ec, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (505) wifi:config nano formatting: disabled[0m
+[0;32mI (509) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (518) wifi:Init management short buffer num: 32[0m
+[0;32mI (522) wifi:Init dynamic tx buffer num: 128[0m
+[0;32mI (527) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (531) wifi:Init static rx buffer num: 10[0m
+[0;32mI (534) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (539) wifi_init: rx ba win: 6[0m
+[0;32mI (541) wifi_init: accept mbox: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (547) wifi_init: udp mbox: 6[0m
+[0;32mI (550) wifi_init: tcp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp tx win: 5760[0m
+[0;32mI (556) wifi_init: tcp rx win: 5760[0m
+[0;32mI (559) wifi_init: tcp mss: 1440[0m
+[0;32mI (562) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (566) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (571) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;33mW (575) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (645) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (660) wifi:mode : sta (80:f3:da:62:fa:fc)[0m
+[0;32mI (661) wifi:enable tsf[0m
+[0;32mI (663) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (667) wifi:enable tsf[0m
+[0;32mI (669) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (670) csi_send: ================ CSI SEND ================[0m
+[0;32mI (671) csi_send: wifi_channel: 11, send_frequency: 100, mac: 1a:00:00:00:00:00[0m
+[0;32mI (1779) csi_send: Status: Broadcasted 100 packets...[0m
+[0;32mI (2879) csi_send: Status: Broadcasted 200 packets...[0m
+[0;32mI (3979) csi_send: Status: Broadcasted 300 packets...[0m
+[0;32mI (5079) csi_send: Status: Broadcasted 400 packets...[0m
+[0;32mI (6179) csi_send: Status: Broadcasted 500 packets...[0m
+[0;32mI (7279) csi_send: Status: Broadcasted 600 packets...[0m
+[0;32mI (8379) csi_send: Status: Broadcasted 700 packets...[0m
+[0;32mI (9479) csi_send: Status: Broadcasted 800 packets...[0m
+[0;32mI (10579) csi_send: Status: Broadcasted 900 packets...[0m
+[0;32mI (11679) csi_send: Status: Broadcasted 1000 packets...[0m
+[0;32mI (12779) csi_send: Status: Broadcasted 1100 packets...[0m
+[0;32mI (13879) csi_send: Status: Broadcasted 1200 packets...[0m
+[0;32mI (14979) csi_send: Status: Broadcasted 1300 packets...[0m
+[0;32mI (16079) csi_send: Status: Broadcasted 1400 packets...[0m
+[0;32mI (17179) csi_send: Status: Broadcasted 1500 packets...[0m
+[0;32mI (18279) csi_send: Status: Broadcasted 1600 packets...[0m
+[0;32mI (19379) csi_send: Status: Broadcasted 1700 packets...[0m
+[0;32mI (20479) csi_send: Status: Broadcasted 1800 packets...[0m
+[0;32mI (21579) csi_send: Status: Broadcasted 1900 packets...[0m

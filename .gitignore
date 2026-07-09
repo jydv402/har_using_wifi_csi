@@ -1,0 +1,7 @@
+# PS venv
+venv/
+# WSL venv
+wsl_env/
+
+# pycache
+**/__pycache__/**

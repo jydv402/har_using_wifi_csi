@@ -1,0 +1,3 @@
+Command: ninja all
+EXTRA_COMPONENT_DIRS: 
+Project commit: 30071351-dirty

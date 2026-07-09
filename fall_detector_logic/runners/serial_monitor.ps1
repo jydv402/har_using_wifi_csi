@@ -1,0 +1,1 @@
+python ..\scripts\dual_serial_monitor.py
