@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633707186403",
+    "project_id": "wifi-csi-fall-alert",
+    "storage_bucket": "wifi-csi-fall-alert.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633707186403:android:5f4866494da1c16d571dd6",
+        "android_client_info": {
+          "package_name": "com.example.fall_alert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPVmVChtKf1WvvruDJkJr-6iU26jb6qSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
