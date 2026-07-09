@@ -1,3 +1,4 @@
+```
 Inference Runner                     Alert Backend                        Flutter App
 ─────────────────                    ─────────────                        ───────────
 fall_detector_logic/                 alert_python_backend/                fall_alert/
@@ -21,7 +22,7 @@ _handle_alerts()                        │                                  hom
   │                                    │ GET /status ◄────────────────────│ polls every 1s
   │                                    │   → {"status": "normal"} ───────►│ resetToNormal() → green UI
 
-
+```
 ## FLOWCHART
 
 ```mermaid
