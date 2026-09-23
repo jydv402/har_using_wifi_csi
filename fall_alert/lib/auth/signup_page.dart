@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'email_verif_page.dart';
-
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
 
@@ -36,18 +34,14 @@ class _SignupPageState extends State<SignupPage> {
     });
 
     try {
-      final credential =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final credential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
 
       //Send verification email
       await credential.user!.sendEmailVerification();
       if (mounted) {
-  Navigator.pop(context);
-}
-      
+        Navigator.pop(context);
+      }
     } on FirebaseAuthException catch (e) {
       setState(() {
         _errorMessage = _mapFirebaseError(e);
@@ -99,10 +93,7 @@ class _SignupPageState extends State<SignupPage> {
               children: [
                 const Text(
                   'Create Account',
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
 
                 const SizedBox(height: 32),
